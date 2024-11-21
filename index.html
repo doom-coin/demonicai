@@ -83,11 +83,11 @@
         
         <h1>DOOMCOIN: BLOCKCHAIN MASSACRE</h1>
         
-        <div class="menu">
-            <a href="#ai">AI</a>
-            <a href="#token">TOKEN</a>
-            <a href="#social">SOCIAL</a>
-            <a href="#warfare">WARFARE</a>
+         <div class="menu">
+            <a href="#ai" onclick="smoothScroll('#ai')">AI</a>
+            <a href="#token" onclick="smoothScroll('#token')">TOKEN</a>
+            <a href="#social" onclick="smoothScroll('#social')">SOCIAL</a>
+            <a href="#warfare" onclick="smoothScroll('#warfare')">WARFARE</a>
         </div>
 
         <div class="warning">
@@ -152,5 +152,17 @@
             © 2024 DOOMCOIN INDUSTRIES. RIZZ THE BLOCKCHAIN. NO MERCY.
         </footer>
     </div>
+     <script>
+        function smoothScroll(target) {
+            event.preventDefault();
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
 </body>
 </html>
